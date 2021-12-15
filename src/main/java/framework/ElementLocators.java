@@ -29,6 +29,8 @@ public class ElementLocators {
 		public static final By edtCompanyName = By.xpath("//input[@name='name' and @autocomplete='new-password']");
 		public static final By btnAccess = By.xpath("//button[text()='Public' or text()='Private']");
 		public static final By lstStatus = By.xpath("//div[@name='status' and @role='listbox']");
+		public static final By lstPriority = By.xpath("//div[@name='priority' and @role='listbox']");
+		public static final By lstCategory = By.xpath("//div[@name='category' and @role='listbox']");
 	}
 
 }

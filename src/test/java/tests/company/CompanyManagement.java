@@ -83,11 +83,14 @@ public class CompanyManagement  extends EventMethods{
 			createCompanyPage.enterCompanyName(tcData.get("COMPANY_NAME"));
 			createCompanyPage.selectCompanyAccessibility(tcData.get("ACCESS"));
 			createCompanyPage.selectStatus(tcData.get("STATUS"));
+			createCompanyPage.selectPriority(tcData.get("PRIORITY"));
+			createCompanyPage.selectCategory(tcData.get("CATEGORY"));
+			
 			
 		} catch(Exception e) {
 			System.out.println(e.getMessage());
 		} finally {
-		//	Driver.quitDriver();
+			Driver.quitDriver();
 			reportUtil.finalizeReport();
 		}
 		

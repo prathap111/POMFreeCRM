@@ -63,9 +63,14 @@ public class CreateCompanyPage extends EventMethods implements ICreateCompanyPag
 		
 	}
 
-	@Override
-	public void selectPriority(String priority) {
-		// TODO Auto-generated method stub
+	
+	public void selectPriority(String priority) throws ValueInListBoxNotFoundException {
+		selectValueFromList(CreateCompanyElems.lstPriority, priority);
+	}
+
+	
+	public void selectCategory(String category) throws ValueInListBoxNotFoundException {
+		selectValueFromList(CreateCompanyElems.lstCategory, category);
 		
 	}
 	

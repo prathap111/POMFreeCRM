@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SmokeTest" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BasicFlows" verbose="2">
+  <groups>
+  	 <run>
+  	 	<include name="delete" />
+  	
+  	 </run>
+  </groups>
+    <classes>
+      <class name="tests.company.Companies">
+     	<methods>
+     		<include name="deleteMultipleCompanies" />
+     	</methods>
+      </class> 
+      <class name="contacts.CreateContacts">
+      
+      </class>
+    </classes>
+  </test>
+   <test thread-count="5" name="BasicFlows1" verbose="2">
+ 
+    <classes>
+      <class name="tests.company.Companies">
+     	
+      </class> 
+      <class name="contacts.CreateContacts">
+      
+      </class>
+    </classes>
+  </test>
+</suite> 
+            

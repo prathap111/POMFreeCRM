@@ -18,7 +18,8 @@ import net.bytebuddy.agent.builder.AgentBuilder.CircularityLock.Global;
 
 public class ReporterUtil {
 	private ExtentReports reports;
-	private ExtentTest testCase; 
+	private ExtentTest testCase;
+	
 	public String captureScreenShot(String imageName) throws IOException {
 		String imagePath = GlobalVariables.SCREENSHOT_PATH+imageName+"_"+Utilities.getTimeStamp()+".png";
 		

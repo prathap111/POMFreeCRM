@@ -20,7 +20,7 @@ public class DataUtil {
 	private XSSFWorkbook wb;
 	
 	
-	public String getEnvConfigFile(String envName) {
+	public static String getEnvConfigFile(String envName) {
 		envName = (envName == null)?"QA":envName;
 		String configFilePath;
 		switch (envName.toUpperCase()) {

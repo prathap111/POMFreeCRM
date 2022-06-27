@@ -90,6 +90,7 @@ public class Driver {
 	public static void quitDriver() {
 		try {
 		 driver.quit();
+		 driver = null;
 		} catch(Exception e) {
 			System.out.println("Driver is already terminated.");
 		}

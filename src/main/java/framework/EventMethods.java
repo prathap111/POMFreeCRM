@@ -228,7 +228,7 @@ public class EventMethods extends ElementLocators{
 		
 	}
 	
-	public void killProcesses() {
+	public static void killProcesses() {
 		
 		try {
 			Runtime.getRuntime().exec("//taskkill /F /IM notepad.exe");

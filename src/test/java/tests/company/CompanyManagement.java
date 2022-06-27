@@ -3,6 +3,8 @@ package tests.company;
 import java.io.IOException;
 import java.util.HashMap;
 
+import org.testng.annotations.Test;
+
 import com.aventstack.extentreports.Status;
 
 import exceptions.FieldInDataFileNotFoundException;
@@ -20,15 +22,12 @@ import pages.impl.LoginPage;
 
 public class CompanyManagement  extends EventMethods{
 
-	public static void main(String[] args) throws Exception {
-		
-		
-		CC001_createNewCompany_public();
 
-	}
 	
 	
-	public static void CC001_createNewCompany_public() throws IOException, FieldInDataFileNotFoundException {
+	@Test
+	public void CC001_createNewCompany_public() throws IOException, FieldInDataFileNotFoundException {
+		
 		ReporterUtil reportUtil = new ReporterUtil();
 		DataUtil dt = new DataUtil();
 		
